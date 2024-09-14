@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://3bxognfrc01a"]
+
+[ext_resource type="Texture2D" uid="uid://3fgb06p4gafy" path="res://assets/darkPurple.png" id="1_0caxo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gf2ut"]
+font_size = 43
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(160, 328, 168, 768, -520, 768, -520, 560, -924, 559, -924, 975, -528, 976, 912, 864, 1896, 976, 1320, 344, 1328, -168, 1152, -480, 848, -464, 280, -472, -176, -648, 48, -1208, 1400, -1240, 1400, -1160, 2176, -1152, 3352, -96, 3504, -296, 2663.59, -904.832, 2936, -912, 2944, -1800, 2952, -2184, 2176, -2192, 2168, -1480, 2096, -1480, 2096, -1688, 2096, -1864, 2096, -2192, 1264, -2192, -1600, -2128, -1288, -1536, -1256, -752, -992.573, -144.504, -1264, 8, -944, 256, -424, 256, -168, -64, -659.746, -120.566, -1024, -832, -960, -1576, -1139.02, -1840, 1328.12, -1855.45, 1872, -1856, 1416, -1440, 24, -1408, -496, -888, -656, -720, -328, -536, 232, -312, 528, -352, 816, -320, 1064, -224, 1128, 240, 896, 408, 1232, 504, 1384, 656, 872, 576, 464, 648, 464, 328)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("1_0caxo")
+polygon = PackedVector2Array(160, 328, 168, 768, -520, 768, -520, 560, -924, 559, -924, 975, -528, 976, 912, 864, 1896, 976, 1320, 344, 1328, -168, 1152, -480, 848, -464, 280, -472, -176, -648, 48, -1208, 1400, -1240, 1400, -1160, 2176, -1152, 3352, -96, 3504, -296, 2663.59, -904.832, 2936, -912, 2944, -1800, 2952, -2184, 2176, -2192, 2168, -1480, 2096, -1480, 2096, -1688, 2096, -1864, 2096, -2192, 1264, -2192, -1600, -2128, -1288, -1536, -1256, -752, -992.573, -144.504, -1264, 8, -944, 256, -424, 256, -168, -64, -659.746, -120.566, -1024, -832, -960, -1576, -1139.02, -1840, 1328.12, -1855.45, 1872, -1856, 1416, -1440, 24, -1408, -496, -888, -656, -720, -328, -536, 232, -312, 528, -352, 816, -320, 1064, -224, 1128, 240, 896, 408, 1232, 504, 1384, 656, 872, 576, 464, 648, 464, 328)
+
+[node name="FinishLabel" type="Label" parent="."]
+offset_left = -944.0
+offset_top = 192.0
+offset_right = -424.0
+offset_bottom = 256.0
+text = "Finish"
+label_settings = SubResource("LabelSettings_gf2ut")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartLabel" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 328.0
+offset_right = 464.0
+offset_bottom = 392.0
+text = "Start"
+label_settings = SubResource("LabelSettings_gf2ut")
+horizontal_alignment = 1
+vertical_alignment = 1
